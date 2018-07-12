@@ -9,5 +9,4 @@ Pod::Spec.new do |s|
   s.source_files = "Sources/*.{swift,h}"
   s.platform     = :ios, '9.0'
   s.requires_arc  = true
-  s.dependency 'ELogger', '~> 6.0'
 end
