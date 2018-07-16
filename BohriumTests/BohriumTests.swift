@@ -17,7 +17,7 @@ class BohriumTests: XCTestCase {
 
     func testIt() {
         let exp = self.expectation(description: "test")
-        let timer = Bohrium(name: "test123", autoStart: true)
+        let timer = Bohrium.Timer(name: "test123", autoStart: true)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             XCTAssertGreaterThan(timer.lapTime, 0.9)
             timer.tick("tick")

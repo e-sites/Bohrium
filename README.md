@@ -33,8 +33,9 @@ pod install
 # Implementation
 
 ```swift
+import Bohrium
 
-let timer = Bohrium(name: "APIRequest")
+let timer = Bohrium.Timer(name: "APIRequest")
 
 Alamofire.request("https://httpbin.org/get").responseJSON { response in
    timer.tick("Response received")

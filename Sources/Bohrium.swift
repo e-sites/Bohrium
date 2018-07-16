@@ -10,7 +10,7 @@ import Foundation
 
 /// The Benchmark module provides methods to measure and report the time used to execute Swift code.
 
-public class Bohrium {
+public class Timer {
     
     /**
      Creates a new Bohrium instance with an optional name
