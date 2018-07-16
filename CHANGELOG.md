@@ -1,5 +1,8 @@
 # Changelog Bohrium
 
+## v4.1.0 (16-07-2018)
+- Added `onTick` and `onStop` handlers.
+
 ## v4.0.1 (16-07-2018)
 - `Bohrium` -> `Bohrium.Timer`
 

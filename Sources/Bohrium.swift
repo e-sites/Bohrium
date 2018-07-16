@@ -56,6 +56,16 @@ public class Timer {
     
     private var _start: CFAbsoluteTime?
     private var _last: CFAbsoluteTime?
+    private var _onTick: ((String?) -> Void)?
+    private var _onStop: ((String?) -> Void)?
+
+    public func onTick(_ closure: @escaping ((String?) -> Void)) {
+        _onTick = closure
+    }
+
+    public func onStop(_ closure: @escaping ((String?) -> Void)) {
+        _onStop = closure
+    }
     
     public var totalTime: CFTimeInterval {
         guard let start = _start else {
@@ -101,6 +111,7 @@ public class Timer {
         }
         
         NSLog("[Bohrium] ⏱ %@at %.3f: %@(+ %.3f)", _prefixName, totalTime, _wrap(description: description), lapTime)
+        _onTick?(description)
         _last = CFAbsoluteTimeGetCurrent()
     }
     
@@ -127,6 +138,7 @@ public class Timer {
         }
         
         NSLog("[Bohrium] 🏁 %@at %.3f: %@(+ %.3f)", _prefixName, totalTime, _wrap(description: description), lapTime)
+        _onStop?(description)
         _start = nil
         _last = nil
     }
