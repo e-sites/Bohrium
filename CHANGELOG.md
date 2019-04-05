@@ -1,5 +1,8 @@
 # Changelog Bohrium
 
+## v4.2.0 (05-04-2019)
+- Swift 5.0
+
 ## v4.1.0 (16-07-2018)
 - Added `onTick` and `onStop` handlers.
 

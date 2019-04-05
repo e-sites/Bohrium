@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Bohrium"
-  s.version      = "4.1.0"
+  s.version      = "4.2.0"
   s.author       = { "Bas van Kuijck" => "bas@e-sites.nl" }
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.homepage     = "http://www.e-sites.nl"
@@ -8,5 +8,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/e-sites/Bohrium.git", :tag => "#{s.version}" }
   s.source_files = "Sources/*.{swift,h}"
   s.platform     = :ios, '9.0'
+  s.swift_version = '5.0'
   s.requires_arc  = true
 end
