@@ -8,6 +8,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/e-sites/Bohrium.git", :tag => "#{s.version}" }
   s.source_files = "Sources/*.{swift,h}"
   s.platform     = :ios, '9.0'
-  s.swift_version = '5.0'
   s.requires_arc  = true
 end
