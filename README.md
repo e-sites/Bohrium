@@ -12,7 +12,6 @@ A small helper class to benchmark specific code parts at runtime.
 
 [![Platform](https://img.shields.io/cocoapods/p/Bohrium.svg?style=flat)](http://cocoadocs.org/docsets/Bohrium)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Bohrium.svg)](http://cocoadocs.org/docsets/Bohrium)
-[![Quality](https://apps.e-sites.nl/cocoapodsquality/Bohrium/badge.svg?004)](https://cocoapods.org/pods/Bohrium/quality)
 [![Travis-ci](https://travis-ci.org/e-sites/Bohrium.svg?branch=master&001)](https://travis-ci.org/e-sites/Bohrium)
 
 

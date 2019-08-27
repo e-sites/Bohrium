@@ -1,5 +1,8 @@
 # Changelog Bohrium
 
+## v4.2.1 (27-08-2019)
+- Removed NSLog
+
 ## v4.2.0 (05-04-2019)
 - Swift 5.0
 
