@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreFoundation
 
 /// The Benchmark module provides methods to measure and report the time used to execute Swift code.
 

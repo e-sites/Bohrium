@@ -1,5 +1,8 @@
 # Changelog Bohrium
 
+## v4.2.2 (30-09-2019)
+- Swift PM compatible
+
 ## v4.2.1 (27-08-2019)
 - Removed NSLog
 
