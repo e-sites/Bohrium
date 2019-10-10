@@ -46,7 +46,7 @@ public class Timer {
         }
         _start = CFAbsoluteTimeGetCurrent()
         _last = CFAbsoluteTimeGetCurrent()
-        print("[Bohrium] 🔫 Start %@", _prefixName)
+        print(String(format: "[Bohrium] 🔫 Start %@", _prefixName))
     }
     
     public var name: String = ""
@@ -111,7 +111,7 @@ public class Timer {
             fatalError("start() not called")
         }
         
-        print("[Bohrium] ⏱ %@at %.3f: %@(+ %.3f)", _prefixName, totalTime, _wrap(description: description), lapTime)
+        print(String(format: "[Bohrium] ⏱ %@at %.3f: %@(+ %.3f)", _prefixName, totalTime, _wrap(description: description), lapTime))
         _onTick?(description)
         _last = CFAbsoluteTimeGetCurrent()
     }
@@ -138,7 +138,7 @@ public class Timer {
             fatalError("start() not called")
         }
         
-        print("[Bohrium] 🏁 %@at %.3f: %@(+ %.3f)", _prefixName, totalTime, _wrap(description: description), lapTime)
+        print(String(format: "[Bohrium] 🏁 %@at %.3f: %@(+ %.3f)", _prefixName, totalTime, _wrap(description: description), lapTime))
         _onStop?(description)
         _start = nil
         _last = nil

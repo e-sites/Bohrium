@@ -1,5 +1,8 @@
 # Changelog Bohrium
 
+## v4.2.3 (10-10-2019)
+- Fixed print statements
+
 ## v4.2.2 (30-09-2019)
 - Swift PM compatible
 
